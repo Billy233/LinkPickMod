@@ -1,10 +1,12 @@
 package com.github.billy233.linkpick.common;
 
+import java.util.Random;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -23,10 +25,11 @@ public class EventLoader {
 
             if (event.harvester.getHeldItem().getItem() instanceof ItemPickaxe && event.block instanceof BlockOre) {
                 
-                Block block = event.block;
+                BlockOre block = (BlockOre)event.block;
                 World world = event.world;
-                int cnt = 0;
+                int cnt = 1;
 
+                event.drops.remove(0);
                 int xMin = event.x - 8;
                 int xMax = event.x + 8;
                 int yMin = event.y - 8;
@@ -44,9 +47,9 @@ public class EventLoader {
                     }
                 }
 
-                
+                Item itemDropped = block.getItemDropped(1, new Random(), 1);
                 if (cnt > 0) {
-                    world.spawnEntityInWorld(new EntityItem(world, event.x, event.y, event.z, new ItemStack(block, cnt)));
+                    world.spawnEntityInWorld(new EntityItem(world, event.x, event.y, event.z, new ItemStack(itemDropped, cnt)));
                 }
 
             }

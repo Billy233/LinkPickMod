@@ -1,0 +1,9 @@
+gradle
+.vscode
+bin
+eclipse
+mc1.7.10src.iml
+mc1.7.10src.ipr
+mc1.7.10src.iws
+gradlew
+gradlew.bat

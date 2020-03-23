@@ -1,7 +1,10 @@
 # Link Pick mod
-Helps you pick ores more convenient .
+Helps you pick ores more convenient.
+
 Minecraft版本: 1.7.10 
+
 Mod latest version: 0.1.0.200323_beta
+
 基于FML和gradle构此项目
 
 后期目标:
@@ -11,7 +14,9 @@ Mod latest version: 0.1.0.200323_beta
 4. etc.
 
 源代码包: src.main.java.github.billy233.linkpick
+
 资源文件: src.main.resources
 
 credits The Mojang, Forge, MCP and FML guys.
+
 2020.3.23 All Rights reserved.

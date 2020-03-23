@@ -3,7 +3,7 @@ Helps you pick ores more convenient.
 
 Minecraft版本: 1.7.10 
 
-Mod latest version: 0.1.0.200323_beta
+Mod latest version: 0.1.1.200323_beta
 
 基于FML和gradle构此项目
 

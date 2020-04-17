@@ -19,6 +19,7 @@ public class EventLoader {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+
     @SubscribeEvent
     public void onOreHarvest(HarvestDropsEvent event) {
         if (!event.world.isRemote && event.harvester != null) {

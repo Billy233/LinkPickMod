@@ -1,0 +1,16 @@
+[
+{
+  "modid": "linkpick",
+  "name": "Link Pick",
+  "description": "Help you pick ores more convenient",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Billy233"],
+  "credits": "The Mojang, Forge, MCP and FML guys",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
